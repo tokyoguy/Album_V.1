@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddPhotoActivity">
+
+    <ImageView
+        android:id="@+id/addphoto_image"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addphoto_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp">
+
+        <EditText
+            android:id="@+id/addphoto_edit_explain"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Введите описание к фото.."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="top"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addphoto_button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Готово"
+        android:textColor="@color/whiteish5"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@id/addphoto_image"
+        android:layout_below="@id/editText"
+        android:background="@drawable/button_circle_corners"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp"/>
+
+</RelativeLayout>

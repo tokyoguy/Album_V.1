@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_edittext_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        android:paddingLeft="15dp"
+        android:background="@drawable/button_circle_corners"
+        android:elevation="7dp"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/password_edittext_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="Пароль"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/email_edittext_login"
+        android:background="@drawable/button_circle_corners"
+        android:elevation="7dp"/>
+    <Button
+        android:id="@+id/button_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/password_edittext_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Войти"
+        android:textColor="@color/whiteish5"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_circle_corners"
+        android:elevation="10dp"/>
+
+    <Button
+        android:id="@+id/button_login_google"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_login_button"
+        android:layout_marginTop="228dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Имеете аккаунт Google?"
+        android:textColor="@color/whiteish5"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:background="@drawable/button_circle_corners"
+        android:elevation="10dp"/>
+
+
+</RelativeLayout>

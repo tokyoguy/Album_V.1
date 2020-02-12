@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".ChatActivity">
+
+ <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/chat_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteish3"
+    android:layout_above="@id/chat_edit_message"/>
+
+    <EditText
+        android:id="@+id/chat_edit_message"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/button_circle_corners"
+        android:hint="Введите сообщение.."
+        android:paddingLeft="10dp"
+        android:elevation="10dp"/>
+
+    <ImageButton
+    android:id="@+id/chat_button_send"
+    android:layout_width="50dp"
+    android:layout_height="45dp"
+    android:src="@drawable/ic_comment"
+    android:layout_marginLeft="7dp"
+    android:layout_toRightOf="@id/chat_edit_message"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/button_circle_corners"
+        android:elevation="10dp"/>
+
+</RelativeLayout>

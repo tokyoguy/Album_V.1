@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Album</string>
+    <string name="likes_notifications"> понравилось Ваше фото!</string>
+    <string name="comments_notifications"> написал Вам комментарий!</string>
+</resources>
